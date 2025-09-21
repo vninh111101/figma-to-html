@@ -49,6 +49,21 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2{
+  --line-clamp: 2;
+}
+
+.break-all{
+  word-break: break-all
+}
 /* ===========================header */
 .header {
   background-color: #fffcf4;
@@ -76,13 +91,14 @@ a {
   font-size: 1.6rem;
   padding: 8px 21px;
 }
-.nav a:hover,
 
+.nav a:hover,
 .nav li.active a {
   color: #171100;
 
   text-shadow: 1px 0 0 currentColor;
 }
+
 .nav li.active a::after {
   position: absolute;
   left: 21px;
@@ -94,12 +110,14 @@ a {
   background-color: #171100;
   display: block;
 }
+
 .header .btn-sign-up {
   min-width: 144px;
 }
 .header .action {
   margin-left: 49px;
 }
+
 /* ==========================hero================== */
 .hero {
   padding: 56px 0 65px;
@@ -310,6 +328,7 @@ background: #FFF;
 box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
 border: 1px solid #E2DFDA;
 background: #FFF;
