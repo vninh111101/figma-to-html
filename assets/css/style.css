@@ -392,8 +392,75 @@ line-height:1.67;
   border: none;
 
 }
-  .popular .course-item .btn-book:hover{
+.popular .course-item .btn-book:hover{
     background-color: var(--primary-color);
 
-  }
+}
+
+/* ===================feedback======================= */
+
+.feedback{
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #2E2100;
+}
   
+.feedback-item{
+  display: flex;
+}
+
+.feedback-item .avatar{
+  width: 72px;
+height: 72px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.feedback-item .info .member-name{
+  margin-top: 18px;
+  color: #F7F7F7;
+font-family: var(--font-heading);
+font-size: 2.4rem;
+
+font-weight: 700;
+line-height: 1.42;
+}
+
+.feedback-item .info .desc{
+  margin-top: 4px;
+  color: #BFBCB2;
+font-size: 1.4rem;
+line-height: 1.86;
+}
+
+.feedback-item .dots{
+  margin-top: 28px;
+  gap: 6px;
+  display: flex;
+}
+
+.feedback-item .dot{
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: #634700;
+cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+
+}
+
+.feedback-item .content{
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote{
+  color: #FFF;
+font-size: 2.6rem;
+font-style: italic;
+line-height: 1.54;
+}
