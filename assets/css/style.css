@@ -393,7 +393,7 @@ line-height:1.67;
 
 }
 .popular .course-item .btn-book:hover{
-    background-color: var(--primary-color);
+ background-color: var(--primary-color);
 
 }
 
@@ -404,9 +404,16 @@ line-height:1.67;
   padding: 96px 0px;
   background: #2E2100;
 }
-  
+
+.feedback-list{
+  display: flex;
+overflow: hidden;
+}
+
 .feedback-item{
   display: flex;
+flex-shrink: 0;
+width: 100%;
 }
 
 .feedback-item .avatar{
