@@ -473,7 +473,7 @@ line-height: 1.54;
 }
 
 
-/* ============================features================================== */
+/* ============================features1================================== */
 
 .features{
 
@@ -485,6 +485,8 @@ line-height: 1.54;
 .features .body{
   display: flex;
 justify-content: space-between;
+  background-color: blue;
+
 }
 
 .features .images{
@@ -520,9 +522,30 @@ line-height: 1.75;
 
 
 .features .content .cta-btn{
-  margin-top: 32px;
-  width: 137px;
-  height: 50px;
+margin-top: 32px;
+width: 137px;
+height: 50px;
 border-radius: 26px;
 background: var(--primary-color);
+}
+
+/* ============================features2================================== */
+
+.features-2nd{
+margin-top: 70px;
+
+
+}
+
+.features-2nd .body{
+flex-direction: row-reverse;
+}
+
+.features-2nd .content{
+width: 49%;
+}
+
+.features-2nd .images img{
+width: 470px;
+height: 440px;
 }
